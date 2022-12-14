@@ -84,6 +84,8 @@ define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
 define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+// wordpress is behind https proxy, by setting this we ensure all links are https://
+$_SERVER['HTTPS'] = 'on';
 
 /* That's all, stop editing! Happy publishing. */
 
