@@ -19,6 +19,9 @@ define( 'WP_INSTALLING', true );
  */
 define( 'WP_SETUP_CONFIG', true );
 
+// added for Azure hosted MySQL database
+define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+
 /**
  * Disable error reporting
  *
