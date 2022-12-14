@@ -1,7 +1,9 @@
 #!/bin/bash
 
 mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
-cp /home/site/wwwroot/service-config/nginx /etc/nginx/sites-available/default
+sed "
+s/WEBSITE_HOSTNAME/$WEBSITE_HOSTNAME/
+" /home/site/wwwroot/service-config/nginx > /etc/nginx/sites-available/default
 service reload nginx
 
 echo "hello"

@@ -5,7 +5,7 @@ server {
     listen [::]:8080;
     root /home/site/wwwroot;
     index  index.php index.html index.htm;
-    server_name thooph1eoc.azurewebsites.net; 
+    server_name WEBSITE_HOSTNAME;
     port_in_redirect off;
     error_log /home/LogFiles/nginx-error.log;
 
